@@ -2710,8 +2710,8 @@ blockquote cite:before {
         }
         @media (max-width: 768px) {
             .whatsapp-float {
-                bottom: 80px;
-                right: 15px;
+                bottom: 90px;
+                right: 32px;
                 width: 40px;
                 height: 40px;
                 padding: 6px;
