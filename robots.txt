@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://surya2726.github.io/Aruna/sitemap.xml
