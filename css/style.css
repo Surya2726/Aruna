@@ -937,7 +937,7 @@ body.offcanvason .ovon-nav-toggle {
 }
 @media screen and (max-width: 991px) {
     .header {
-        background-position: center center;
+        background-position: right;
     }
     .header .caption h1 {
         font-size: 45px;
@@ -1215,14 +1215,15 @@ body.offcanvason .ovon-nav-toggle {
 /* =======  About Style  ======= */
 .about-img {
     width: 100%;
-    height: 500px
+    height: 500px;
 }
 .about-img,
 .about-img-2 {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    position: relative
+    position: relative;
+    border-radius: 10px;
 }
 .about-img .about-img-2 {
     width: 25% !important;
@@ -1296,6 +1297,20 @@ body.offcanvason .ovon-nav-toggle {
     bottom: 0;
 }
 .services .item img {
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-filter: brightness(100%);
+}
+.services .item .position-re {
+    height: 350px;
+    overflow: hidden;
+    display: block;
+}
+.services .item .position-re img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
     -webkit-transition: all .5s;
     transition: all .5s;
     -webkit-filter: brightness(100%);
@@ -2721,4 +2736,38 @@ blockquote cite:before {
                 height: 32px;
             }
         }
+
+    /* Instagram Floating Button */
+    .instagram-float {
+        position: fixed;
+        bottom: 160px;
+        right: 30px;
+        z-index: 1050;
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        border-radius: 50%;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: box-shadow 0.2s;
+        animation: tada 2s ease-in-out 2s infinite;
+    }
+    .instagram-float:hover {
+        box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+        animation: tada 2s;
+    }
+    @media (max-width: 768px) {
+        .instagram-float {
+            bottom: 145px;
+            right: 32px;
+            width: 40px;
+            height: 40px;
+            padding: 6px;
+        }
+        .instagram-float img {
+            width: 32px;
+            height: 32px;
+        }
+    }
       
